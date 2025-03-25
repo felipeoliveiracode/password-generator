@@ -57,7 +57,8 @@ body {
     justify-content: space-between;
 }
 
-.fa-solid, .fas {
+.fa-solid,
+.fas {
     font-weight: 900;
     cursor: pointer;
 }
@@ -74,7 +75,7 @@ input#character {
     width: 100%;
 }
 
-.options-pass{
+.options-pass {
     margin: 10px 0 0;
     background-color: rgba(0, 0, 0, 0.314);
     padding: 20px;
@@ -110,4 +111,10 @@ input#character {
     text-decoration: none;
     color: #6fa036;
     font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        min-height: 90vh;
+    }
 }
