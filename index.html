@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="assets/illustration.svg" alt="Ilustração de um cadeado" class="logo">
+            <h1>Gerador de Senhas</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="generated-password">
+                <span id="password-output"></span>
+                <i id="copy-password" class="fa-solid fa-copy"></i>
+            </div>
+
+            <div class="character-count">
+                <input type="range" id="character" name="character" min="8" max="20" step="1" value="8" />
+                <label for="character"><span class="span-character">8</span> caracteres</label>
+            </div>
+
+            <section class="options-pass">
+                <div class="input">
+                    <input type="checkbox" id="uppercase" name="uppercase">
+                    <label for="uppercase">Incluir letras maiúsculas</label>
+                </div>
+
+                <div class="input">
+                    <input type="checkbox" id="lowercase" name="lowercase">
+                    <label for="lowercase">Incluir letras minúsculas</label>
+                </div>
+
+                <div class="input">
+                    <input type="checkbox" id="numbers" name="numbers">
+                    <label for="numbers">Incluir números</label>
+                </div>
+
+                <div class="input">
+                    <input type="checkbox" id="special-character" name="special-character">
+                    <label for="special-character">Incluir caracteres especiais</label>
+                </div>
+            </section>
+
+            <button id="generate-password">Gerar Senha</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="footer__author">Desenvolvido por <a href="https://www.linkedin.com/in/felipeoliveiracode"
+                    target="_blank">Felipe
+                    Oliveira</a></p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

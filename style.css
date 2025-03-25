@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #030826;
+    --primary-color: #3D5A73;
+    --primary-color-2: #1C1F59;
+    --secondary-color: #D95525;
+    --secondary-color-2: #8C442A;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header .logo {
+    width: 85px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.generated-password {
+    background: #000000;
+    margin: 15px 0px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.character-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+input#character {
+    width: 100%;
+}
+
+.options-pass{
+    margin: 10px 0 0;
+    background-color: rgba(0, 0, 0, 0.314);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#generate-password {
+    background-color: #8BC34A;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#generate-password:hover {
+    background-color: #6fa036;
+}
+
+.footer__author {
+    margin-top: 15px;
+    color: #6fa036;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer__author a {
+    text-decoration: none;
+    color: #6fa036;
+    font-weight: 700;
+}
